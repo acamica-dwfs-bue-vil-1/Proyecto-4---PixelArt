@@ -94,9 +94,14 @@ input[type="color"]::-webkit-color-swatch {
   color: white;
 }
 
-.cursor-personalizado {
-  cursor: url(../img/cursor.png), auto;
+.cursor-personalizado-lapiz {
+  cursor: url(../img/cursorLapiz.png), auto;
 }
+
+.cursor-personalizado-goma {
+  cursor: url(../img/cursorGoma.png), auto;
+}
+
 .row {
   margin: 0;
   padding: 0;
@@ -170,6 +175,31 @@ img {
   margin-top: 15px;
   background-color: black;
 }
+
+#utiles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  background-color: black;
+}
+
+
+.goma, .lapiz {
+  width: 50%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.goma img, .lapiz img {
+  width: 75%;
+}
+
+.utilActivo {
+  border: 2px solid white;
+}
+
 
 @media only screen and (max-width: 1060px) {
   main {
